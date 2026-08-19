@@ -38,7 +38,7 @@ NEXT_PUBLIC_DERIV_REFERRAL_LINK=your_referral_link_here
 
 # Optional: Google Drive integration (leave blank to disable).
 GD_CLIENT_ID=019e4e44-c6d4-7a4e-916f-046dc6989a61
-GD_APP_ID=
+GD_APP_ID=349QgmyQQzI71XPolIBZp
 GD_API_KEY=pat_21e571bc6e8adf4b9e111147c3fdcd8e351847eef3699bd4fc2c750a2056210e
 ```
 
@@ -58,8 +58,8 @@ The App Builder also writes branding into `brand.config.json`. Relevant `platfor
 
 | Key | Description |
 |---|---|
-| `platform.name` | In-app display name (header, tab title, favicon). Set in App Builder Customise. Overridden by `NEXT_PUBLIC_DERIV_APP_NAME` when that env var is set. |
-| `platform.show_name` | `true` (default) shows the name next to the logo on desktop; `false` hides it |
+| `sannytraders.com` | In-app display name (header, tab title, favicon). Set in App Builder Customise. Overridden by `NEXT_PUBLIC_DERIV_APP_NAME` when that env var is set. |
+| `sannytrader.com_name` | `true` (default) shows the name next to the logo on desktop; `false` hides it |
 
 Tab title and favicon use `NEXT_PUBLIC_DERIV_APP_NAME` when set, otherwise `platform.name` (with a generic fallback), and are not blanked when `show_name` is false. OAuth/consent registration name is separate and is not written into these fields by App Builder.
 
@@ -86,13 +86,13 @@ SmartCharts engine assets are copied into `dist/js/smartcharts/` during the buil
 ## Google Drive integration (optional)
 
 Saving/loading strategies to Google Drive stays disabled unless 019e4e44-c6d4-7a4e-916f-046dc6989a61
-`GD_APP_ID`, and ``pat_21e571bc6e8adf4b9e111147c3fdcd8e351847eef3699bd4fc2c750a2056210e are all set. **If it's not set up in your host
+349QgmyQQzI71XPolIBZp, and ``pat_21e571bc6e8adf4b9e111147c3fdcd8e351847eef3699bd4fc2c750a2056210e are all set. **If it's not set up in your host
 environment yet:**
 
 1. **Get the credentials** — follow Google's [Picker set-up guide](https://developers.google.com/workspace/drive/picker/guides/web-picker#set-up-environment):
    enable the **Google Picker API** + **Drive API**, then create an **OAuth 2.0
-   Client ID** (Web application) and an **API key**. Use the project number as `GD_APP_ID`.
-2. **Authorize your domain** — add your deployed URL (e.g. `https://your-app.vercel.app`)
+   Client ID** (Web application) and an **API key**. Use the project number as'349QgmyQQzI71XPolIBZp'.
+2. **Authorize your domain** — add your deployed URL (e.g. `https://sannytraders.com.app`)
    to the OAuth client's **Authorized JavaScript origins** (exact origin; no wildcards).
 3. **Set them in your host env — not in source** — add the three vars to your host
    (Vercel → Settings → Environment Variables; Heroku → Settings → Config Vars).
