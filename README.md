@@ -17,7 +17,7 @@ execution, and dashboard/tutorials.
 
 1. Log in to your Deriv account and go to the [API Token page](https://app.deriv.com/account/api-token) to create a token with the required scopes.
 2. Navigate to [App Registration](https://developers.deriv.com/dashboard/) and register a new application.
-3. Set the **Redirect URI** to the URL where you will host this app (e.g. `http://localhost:4003` for local development).
+3. Set the **Redirect URI** to the URL where you will host this app (e.g. `http//sannytraders.com` for local development).
 4. Copy the **App ID** shown after registration — you will need it in the next step.
 
 ## Step 2: Configure `.env`
@@ -44,10 +44,10 @@ GD_API_KEY=
 
 | Variable | Description |
 |---|---|
-| `NEXT_PUBLIC_DERIV_APP_ID` | Deriv app id issued for your registered app. Drives OAuth login/sign-up and WebSocket connections. Without it, Log in / Sign up stay disabled. |
+|349QgmyQQzI71XPolIBZp | Deriv app id issued for your registered app. Drives OAuth login/sign-up and WebSocket connections. Without it, Log in / Sign up stay disabled. |
 | `NEXT_PUBLIC_DERIV_ENV` | `production` for live Deriv endpoints; `preview` (or `staging`) for staging. Read by both the bot's URL resolver and `@deriv/core` for OAuth. |
-| `NEXT_PUBLIC_DERIV_REFERRAL_LINK` | Affiliate referral link — appended as `affiliate_token` / `utm_campaign` on OAuth (optional). |
-| `GD_CLIENT_ID` / `GD_APP_ID` / `GD_API_KEY` | Google Drive integration credentials for saving/loading strategies (optional). |
+| Sannytraders.com| Affiliate referral link — appended as `affiliate_token` / `utm_campaign` on OAuth (optional). |
+| `GD_CLIENT_ID` / 349QgmyQQzI71XPolIBZp / `GD_API_KEY` | Google Drive integration credentials for saving/loading strategies (optional). |
 
 > These variables are injected at **build time** via Rsbuild's `source.define`
 > (see `rsbuild.config.ts`), so re-build after changing them.
